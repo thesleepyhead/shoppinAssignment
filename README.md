@@ -25,17 +25,29 @@ More domains can be added easily to the seed list.
  
 src/
 ├── com/
+
 │   └── crawler/
+
 │       ├── CrawlerApp.java            # Main crawling logic
+
 │       ├── config/
+
 │       │   └── Config.java            # Global configuration
+
 │       ├── fetcher/
+
 │       │   ├── PageFetcher.java       # Interface for fetchers
+
 │       │   ├── PageFetcherFactory.java# Factory to switch between fetchers
+
 │       │   ├── SeleniumFetcher.java   # Uses Selenium to fetch dynamic pages
+
 │       │   └── HtmlUnitFetcher.java   # Uses HTMLUnit to fetch static content pages
+
 │       └── util/
+
 │           └── URLDepthPair.java      # Custom class to pair URL and depth
+
 # How It Works
 Seed Initialization
 The application starts from a hardcoded list of seed URLs.
